@@ -1,12 +1,22 @@
 import { useDispatch } from "react-redux";
-import { login } from "../../store";
+import { login, setCurrentLocal } from "../../store";
+import { useTranslation } from "react-i18next";
 
 export const LoginPage = () => {
   const dispatch = useDispatch();
+  const { t } = useTranslation();
+
   return (
     <>
       <div>
         <button onClick={() => dispatch(login())}>Ingresar</button>
+        <h1>{t("logIn_message")}</h1>
+        <button onClick={() => dispatch(setCurrentLocal("en"))}>
+          CAmbiar Ingles
+        </button>
+        <button onClick={() => dispatch(setCurrentLocal("es"))}>
+          CAmbiar Español
+        </button>
       </div>
     </>
   );

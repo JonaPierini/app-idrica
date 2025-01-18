@@ -5,27 +5,25 @@ import { HomePage, LoginPage } from "../../pages";
 
 export const AppRouter = () => {
   return (
-    <>
-      <Routes>
-        <Route
-          path="login/*"
-          element={
-            <PublicRoute>
-              <Routes>
-                <Route path="/*" element={<LoginPage />} />
-              </Routes>
-            </PublicRoute>
-          }
-        />
-        <Route
-          path="/*"
-          element={
-            <PrivateRoute>
-              <HomePage />
-            </PrivateRoute>
-          }
-        />
-      </Routes>
-    </>
+    <Routes>
+      <Route
+        path="login/*"
+        element={
+          <PublicRoute>
+            <Routes>
+              <Route path="/*" element={<LoginPage />} />
+            </Routes>
+          </PublicRoute>
+        }
+      />
+      <Route
+        path="/*"
+        element={
+          <PrivateRoute>
+            <HomePage />
+          </PrivateRoute>
+        }
+      />
+    </Routes>
   );
 };
