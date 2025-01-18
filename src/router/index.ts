@@ -1,3 +1,3 @@
-export * from "./AppRouter";
-export * from "./PrivateRoute";
-export * from "./PublicRoute";
+export * from "./app/AppRouter";
+export * from "./private/PrivateRoute";
+export * from "./public/PublicRoute";

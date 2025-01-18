@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
-import { PublicRoute } from "./PublicRoute";
-import { PrivateRoute } from "./PrivateRoute";
-import { HomePage, LoginPage } from "../pages";
+import { PublicRoute } from "../public/PublicRoute";
+import { PrivateRoute } from "../private/PrivateRoute";
+import { HomePage, LoginPage } from "../../pages";
 
 export const AppRouter = () => {
   return (
