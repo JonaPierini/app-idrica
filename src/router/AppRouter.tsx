@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router";
 import { PublicRoute } from "./PublicRoute";
 import { PrivateRoute } from "./PrivateRoute";
+import { HomePage, LoginPage } from "../pages";
 
 export const AppRouter = () => {
   return (
@@ -11,7 +12,7 @@ export const AppRouter = () => {
           element={
             <PublicRoute>
               <Routes>
-                <Route path="/*" element={<h1>Login Page</h1>} />
+                <Route path="/*" element={<LoginPage />} />
               </Routes>
             </PublicRoute>
           }
@@ -20,7 +21,7 @@ export const AppRouter = () => {
           path="/*"
           element={
             <PrivateRoute>
-              <h1>Private Route</h1>
+              <HomePage />
             </PrivateRoute>
           }
         />

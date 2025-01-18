@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Estilos para el modo claro  */
+body {
+  @apply bg-white text-black;
+}
+
+/* Estilos para el modo oscuro */
+body.dark {
+  @apply bg-gray-900 text-white;
+}

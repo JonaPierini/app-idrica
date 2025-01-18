@@ -1,10 +1,16 @@
+import { ReactNode } from "react";
 import { useSelector } from "react-redux";
 import { Navigate } from "react-router";
+import { RootState } from "../store";
 
-export const PublicRoute = ({ children }: any) => {
+interface PublicRouteProps {
+  children: ReactNode;
+}
+
+export const PublicRoute = ({ children }: PublicRouteProps) => {
   const isAuthenticated = useSelector(
-    (state: any) => state.auth.isAuthenticated
+    (state: RootState) => state.auth.isAuthenticated
   );
 
-  return !isAuthenticated ? children : <Navigate to="/marvel" />;
+  return !isAuthenticated ? children : <Navigate to="/home" />;
 };
