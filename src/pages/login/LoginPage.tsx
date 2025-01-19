@@ -9,7 +9,6 @@ export const LoginPage = () => {
   return (
     <>
       <div>
-        <button onClick={() => dispatch(login())}>Ingresar</button>
         <h1>{t("logIn_message")}</h1>
         <button onClick={() => dispatch(setCurrentLocal("en"))}>
           CAmbiar Ingles

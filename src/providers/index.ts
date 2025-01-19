@@ -1,2 +1,2 @@
 export * from "./theme/ThemeProvider";
-export * from "./locales/LocalProvider";
+export * from "./i18n/LocalProvider";

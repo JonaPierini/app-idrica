@@ -5,7 +5,7 @@ type localStore = {
 };
 
 const initialState: localStore = {
-  locale: "es",
+  locale: (localStorage.getItem("language") as "es" | "en") || "es",
 };
 
 export const localSlice = createSlice({
@@ -14,6 +14,7 @@ export const localSlice = createSlice({
   reducers: {
     setCurrentLocal: (state, action: PayloadAction<"es" | "en">) => {
       state.locale = action.payload;
+      localStorage.setItem("language", action.payload);
     },
   },
 });
