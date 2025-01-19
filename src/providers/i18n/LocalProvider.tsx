@@ -7,7 +7,6 @@ import { I18nextProvider } from "react-i18next";
 export const LocaleProvider = ({ children }: { children: React.ReactNode }) => {
   const locale = useSelector((state: RootState) => state.local.locale);
 
-  // Cambiar el idioma en i18next cuando el estado cambie
   useEffect(() => {
     i18n.changeLanguage(locale);
   }, [locale]);

@@ -19,5 +19,4 @@ export const localSlice = createSlice({
   },
 });
 
-// Exportar acciones y reducer
 export const { setCurrentLocal } = localSlice.actions;

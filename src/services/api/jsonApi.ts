@@ -13,5 +13,4 @@ export const jsonApi = createApi({
   }),
 });
 
-// Exportar hooks generados automáticamente
 export const { useFetchPostsQuery } = jsonApi;

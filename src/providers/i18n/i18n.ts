@@ -3,7 +3,6 @@ import { initReactI18next } from "react-i18next";
 import ES from "../../locales/es-ES.json";
 import EN from "../../locales/en-US.json";
 
-// Configuración de i18next
 i18n.use(initReactI18next).init({
   resources: {
     es: {
@@ -13,10 +12,10 @@ i18n.use(initReactI18next).init({
       translation: EN,
     },
   },
-  lng: "es", // Idioma por defecto
-  fallbackLng: "en", // Idioma de respaldo
+  lng: "es",
+  fallbackLng: "en",
   interpolation: {
-    escapeValue: false, // React ya maneja el escape de valores
+    escapeValue: false,
   },
 });
 

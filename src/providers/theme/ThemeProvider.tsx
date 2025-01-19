@@ -20,7 +20,6 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 
   return (
     <div>
-      {/* Este botón puede ser utilizado para alternar el modo */}
       <button
         onClick={() => dispatch(toggleMode())}
         className="px-4 py-2 bg-blue-500 text-white rounded"
