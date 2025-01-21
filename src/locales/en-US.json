@@ -1,3 +1,6 @@
 {
-  "logIn_message": "Log In"
+  "logIn_message": "Log In",
+  "app_message": "App",
+  "home_message": "Home",
+  "about_message": "About"
 }
