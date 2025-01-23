@@ -1,6 +1,7 @@
 {
-  "logIn_message": "Log In",
   "app_message": "App",
+  "logIn_message": "Log In",
+  "logOut_message": "Log Out",
   "home_message": "Home",
   "about_message": "About",
   "copyright_message": "© All rights reserved."

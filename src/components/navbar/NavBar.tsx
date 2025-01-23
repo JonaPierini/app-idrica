@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState, setCurrentLocal, toggleMode } from "../../store";
+import { logout, RootState, setCurrentLocal, toggleMode } from "../../store";
 import { Link } from "react-router";
+import { Button } from "../button/Button";
+import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
 
 export const NavBar = () => {
   const dispatch = useDispatch();
@@ -33,6 +35,19 @@ export const NavBar = () => {
             </li>
           </ul>
         </nav>
+      </div>
+      <div className="ml-auto flex gap-4 items-center">
+        <button
+          onClick={() => dispatch(toggleMode())}
+          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 dark:hover:bg-blue-400"
+        >
+          {isDarkMode ? (
+            <MdOutlineDarkMode className="text-white" />
+          ) : (
+            <MdDarkMode className="text-white" />
+          )}
+        </button>
+        <Button title={t("logOut_message")} action={() => dispatch(logout())} />
       </div>
     </header>
   );
