@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { login } from "../../store";
 import { useTranslation } from "react-i18next";
-import { Card } from "../../components";
+import { Button, Card, Spinner } from "../../components";
 import { useFetchPostsQuery } from "../../services";
 
 export const LoginPage = () => {
@@ -9,17 +9,12 @@ export const LoginPage = () => {
   const dispatch = useDispatch();
   const { t } = useTranslation();
 
-  if (isLoading) return <p>Cargando posts...</p>;
+  if (isLoading) return <Spinner />;
 
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen p-4">
       <div>
-        <h1
-          className="text-2xl font-bold text-blue-600 dark:text-blue-400 cursor-pointer hover:underline"
-          onClick={() => dispatch(login())}
-        >
-          {t("logIn_message")}
-        </h1>
+        <Button title={t("logIn_message")} action={() => dispatch(login())} />
       </div>
       <div className="mt-6">
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
