@@ -4,6 +4,7 @@ import { logout, RootState, setCurrentLocal, toggleMode } from "../../store";
 import { Link } from "react-router";
 import { Button } from "../button/Button";
 import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
+import { Flags } from "../flag/Flags";
 
 export const NavBar = () => {
   const dispatch = useDispatch();
@@ -39,7 +40,7 @@ export const NavBar = () => {
       <div className="ml-auto flex gap-4 items-center">
         <button
           onClick={() => dispatch(toggleMode())}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 dark:hover:bg-blue-400"
+          className="px-2 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 dark:hover:bg-blue-400"
         >
           {isDarkMode ? (
             <MdOutlineDarkMode className="text-white" />
@@ -47,6 +48,16 @@ export const NavBar = () => {
             <MdDarkMode className="text-white" />
           )}
         </button>
+        <Flags
+          onClick={() => dispatch(setCurrentLocal("en"))}
+          code="US"
+          alt="English"
+        />
+        <Flags
+          onClick={() => dispatch(setCurrentLocal("es"))}
+          code="ES"
+          alt="Español"
+        />
         <Button title={t("logOut_message")} action={() => dispatch(logout())} />
       </div>
     </header>
