@@ -10,7 +10,13 @@ export const jsonApi = createApi({
     fetchPosts: builder.query<PostsAPI[], void>({
       query: () => "posts",
     }),
+    deletePosts: builder.mutation<{ success: boolean }, number>({
+      query: (id) => ({
+        url: `posts/${id}`,
+        method: "DELETE",
+      }),
+    }),
   }),
 });
 
-export const { useFetchPostsQuery } = jsonApi;
+export const { useFetchPostsQuery, useDeletePostsMutation } = jsonApi;

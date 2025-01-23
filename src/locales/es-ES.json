@@ -2,5 +2,6 @@
   "app_message": "Aplicación",
   "logIn_message": "Ingresar",
   "home_message": "Home",
-  "about_message": "Sobre Nosotros"
+  "about_message": "Sobre Nosotros",
+  "copyright_message": "© Todos los derechos reservados."
 }
