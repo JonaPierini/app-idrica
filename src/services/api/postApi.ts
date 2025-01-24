@@ -1,10 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { PostsAPI } from "../../interfaces";
+import { API_URL } from "../../config";
 
 export const postApi = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://jsonplaceholder.typicode.com/",
+    baseUrl: `${API_URL}`,
   }),
   refetchOnFocus: true,
   refetchOnReconnect: true,
