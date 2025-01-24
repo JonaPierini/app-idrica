@@ -7,14 +7,14 @@ import "./index.css";
 
 export const App = () => {
   return (
-    <BrowserRouter>
-      <Provider store={store}>
+    <Provider store={store}>
+      <BrowserRouter>
         <ThemeProvider>
           <LocaleProvider>
             <AppRouter />
           </LocaleProvider>
         </ThemeProvider>
-      </Provider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </Provider>
   );
 };

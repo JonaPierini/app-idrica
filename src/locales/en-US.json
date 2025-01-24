@@ -3,6 +3,16 @@
   "logIn_message": "Log In",
   "logOut_message": "Log Out",
   "home_message": "Home",
-  "about_message": "About",
+  "create_message": "Create",
+  "create_succesfully": "Create Successfully",
+  "create_error": "Error updating",
+  "create_title": "Title",
+  "create_body": "Body",
+  "update_message": "Update",
+  "update_succesfully": "Updated Successfully",
+  "update_error": "Error updating",
+  "delete_message": "Delete",
+  "delete_succesfully": "Delete Successfully",
+  "delete_error": "Error deleting",
   "copyright_message": "© All rights reserved."
 }

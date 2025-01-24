@@ -2,10 +2,10 @@ import { useDispatch } from "react-redux";
 import { login } from "../../store";
 import { useTranslation } from "react-i18next";
 import { Button, Card, Spinner } from "../../components";
-import { useFetchPostsQuery } from "../../services";
+import { useGetPostsQuery } from "../../services";
 
 export const LoginPage = () => {
-  const { data: posts, isLoading } = useFetchPostsQuery();
+  const { data: posts, isLoading } = useGetPostsQuery();
   const dispatch = useDispatch();
   const { t } = useTranslation();
 

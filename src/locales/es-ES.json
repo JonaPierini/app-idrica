@@ -3,6 +3,16 @@
   "logIn_message": "Ingresar",
   "logOut_message": "Salir",
   "home_message": "Inicio",
-  "about_message": "Sobre Nosotros",
+  "create_message": "Crear",
+  "create_succesfully": "Creación Realizada",
+  "create_error": "Error al realizar un nuevo post",
+  "create_title": "Titulo",
+  "create_body": "Cuerpo",
+  "update_message": "Actualizar",
+  "update_succesfully": "Actualización Realizada",
+  "update_error": "Error al realizar la actualizacion",
+  "delete_message": "Borrar",
+  "delete_succesfully": "Borrado Correctamente",
+  "delete_error": "Error al borrar",
   "copyright_message": "© Todos los derechos reservados."
 }

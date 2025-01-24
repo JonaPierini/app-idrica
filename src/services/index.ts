@@ -1,1 +1,1 @@
-export * from "./api/jsonApi";
+export * from "./api/postApi";

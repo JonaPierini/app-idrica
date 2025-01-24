@@ -1,6 +1,6 @@
 export interface PostsAPI {
-  userid: number;
-  id: number;
+  userId: string;
+  id: string;
   title: string;
   body: string;
 }

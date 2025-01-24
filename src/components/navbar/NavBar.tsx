@@ -28,10 +28,26 @@ export const NavBar = () => {
             </li>
             <li>
               <Link
-                to="/about"
+                to="/create"
                 className="font-semibold text-white dark:text-white hover:text-gray-200 dark:hover:text-gray-400"
               >
-                {t("about_message")}
+                {t("create_message")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/update"
+                className="font-semibold text-white dark:text-white hover:text-gray-200 dark:hover:text-gray-400"
+              >
+                {t("update_message")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/delete"
+                className="font-semibold text-white dark:text-white hover:text-gray-200 dark:hover:text-gray-400"
+              >
+                {t("delete_message")}
               </Link>
             </li>
           </ul>
