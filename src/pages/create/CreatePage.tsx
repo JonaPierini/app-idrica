@@ -8,12 +8,11 @@ import { useTranslation } from "react-i18next";
 
 export const CreatePage = () => {
   const { data: posts, isLoading } = useGetPostsQuery();
+  const { t } = useTranslation();
   const [createPost] = useCreatePostMutation();
   const [title, setTitle] = useState<string>("");
   const [body, setBody] = useState<string>("");
   const [allData, setAllData] = useState<PostsAPI[]>(posts || []);
-
-  const { t } = useTranslation();
 
   useEffect(() => {
     if (posts) {
@@ -55,13 +54,13 @@ export const CreatePage = () => {
       <div className="pt-5 bg-gray-100 dark:bg-gray-900 rounded-md shadow-md space-y-4">
         <input
           className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring focus:ring-blue-500"
-          placeholder={t("create_title")}
+          placeholder={t("message_title")}
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
           className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring focus:ring-blue-500"
-          placeholder={t("create_body")}
+          placeholder={t("message_body")}
           value={body}
           onChange={(e) => setBody(e.target.value)}
         />

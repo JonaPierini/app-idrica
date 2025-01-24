@@ -6,13 +6,16 @@
   "create_message": "Crear",
   "create_succesfully": "Creación Realizada",
   "create_error": "Error al realizar un nuevo post",
-  "create_title": "Titulo",
-  "create_body": "Cuerpo",
+  "message_title": "Titulo",
+  "message_body": "Cuerpo",
   "update_message": "Actualizar",
   "update_succesfully": "Actualización Realizada",
   "update_error": "Error al realizar la actualizacion",
   "delete_message": "Borrar",
   "delete_succesfully": "Borrado Correctamente",
   "delete_error": "Error al borrar",
+  "post_chart": "Post",
+  "post_titles": "Post Titulo",
+  "post_number": "Numeros de Posts",
   "copyright_message": "© Todos los derechos reservados."
 }

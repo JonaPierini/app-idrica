@@ -6,13 +6,16 @@
   "create_message": "Create",
   "create_succesfully": "Create Successfully",
   "create_error": "Error updating",
-  "create_title": "Title",
-  "create_body": "Body",
+  "message_title": "Title",
+  "message_body": "Body",
   "update_message": "Update",
   "update_succesfully": "Updated Successfully",
   "update_error": "Error updating",
   "delete_message": "Delete",
   "delete_succesfully": "Delete Successfully",
   "delete_error": "Error deleting",
+  "post_chart": "Post Chart",
+  "post_titles": "Post Titles",
+  "post_number": "Number of Posts",
   "copyright_message": "© All rights reserved."
 }
